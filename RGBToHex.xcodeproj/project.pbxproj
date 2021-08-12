@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D40686CF26C5181200CF18A5 /* extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40686CE26C5181200CF18A5 /* extentions.swift */; };
+		D40686D426C51FE500CF18A5 /* RgbToHexViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40686D326C51FE500CF18A5 /* RgbToHexViewModel.swift */; };
+		D40686D726C52A2300CF18A5 /* ColorStyling.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40686D626C52A2300CF18A5 /* ColorStyling.swift */; };
 		D44D522B26C2EF8B0006ACED /* RGBToHexApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44D522A26C2EF8B0006ACED /* RGBToHexApp.swift */; };
 		D44D522D26C2EF8B0006ACED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44D522C26C2EF8B0006ACED /* ContentView.swift */; };
 		D44D522F26C2EF8C0006ACED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D44D522E26C2EF8C0006ACED /* Assets.xcassets */; };
 		D44D523226C2EF8C0006ACED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D44D523126C2EF8C0006ACED /* Preview Assets.xcassets */; };
 		D44D523D26C2EF8C0006ACED /* RGBToHexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44D523C26C2EF8C0006ACED /* RGBToHexTests.swift */; };
 		D44D524826C2EF8C0006ACED /* RGBToHexUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44D524726C2EF8C0006ACED /* RGBToHexUITests.swift */; };
+		D488E6CE26C43F2100FF011C /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D488E6CD26C43F2100FF011C /* WebService.swift */; };
+		D488E6D126C43F4A00FF011C /* ColorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D488E6D026C43F4A00FF011C /* ColorModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D40686CE26C5181200CF18A5 /* extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extentions.swift; sourceTree = "<group>"; };
+		D40686D326C51FE500CF18A5 /* RgbToHexViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RgbToHexViewModel.swift; sourceTree = "<group>"; };
+		D40686D626C52A2300CF18A5 /* ColorStyling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorStyling.swift; sourceTree = "<group>"; };
 		D44D522726C2EF8B0006ACED /* RGBToHex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RGBToHex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D44D522A26C2EF8B0006ACED /* RGBToHexApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBToHexApp.swift; sourceTree = "<group>"; };
 		D44D522C26C2EF8B0006ACED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +53,8 @@
 		D44D524326C2EF8C0006ACED /* RGBToHexUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RGBToHexUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D44D524726C2EF8C0006ACED /* RGBToHexUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBToHexUITests.swift; sourceTree = "<group>"; };
 		D44D524926C2EF8C0006ACED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D488E6CD26C43F2100FF011C /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		D488E6D026C43F4A00FF011C /* ColorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +82,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D40686D226C51FD200CF18A5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D40686D326C51FE500CF18A5 /* RgbToHexViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D40686D526C52A1600CF18A5 /* Styling */ = {
+			isa = PBXGroup;
+			children = (
+				D40686D626C52A2300CF18A5 /* ColorStyling.swift */,
+			);
+			path = Styling;
+			sourceTree = "<group>";
+		};
 		D44D521E26C2EF8B0006ACED = {
 			isa = PBXGroup;
 			children = (
@@ -95,11 +121,16 @@
 		D44D522926C2EF8B0006ACED /* RGBToHex */ = {
 			isa = PBXGroup;
 			children = (
+				D40686D526C52A1600CF18A5 /* Styling */,
+				D40686D226C51FD200CF18A5 /* ViewModel */,
+				D488E6CF26C43F3300FF011C /* Models */,
+				D488E6CC26C43F0D00FF011C /* Services */,
 				D44D522A26C2EF8B0006ACED /* RGBToHexApp.swift */,
 				D44D522C26C2EF8B0006ACED /* ContentView.swift */,
 				D44D522E26C2EF8C0006ACED /* Assets.xcassets */,
 				D44D523326C2EF8C0006ACED /* Info.plist */,
 				D44D523026C2EF8C0006ACED /* Preview Content */,
+				D40686CE26C5181200CF18A5 /* extentions.swift */,
 			);
 			path = RGBToHex;
 			sourceTree = "<group>";
@@ -128,6 +159,22 @@
 				D44D524926C2EF8C0006ACED /* Info.plist */,
 			);
 			path = RGBToHexUITests;
+			sourceTree = "<group>";
+		};
+		D488E6CC26C43F0D00FF011C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D488E6CD26C43F2100FF011C /* WebService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D488E6CF26C43F3300FF011C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D488E6D026C43F4A00FF011C /* ColorModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +306,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D488E6CE26C43F2100FF011C /* WebService.swift in Sources */,
 				D44D522D26C2EF8B0006ACED /* ContentView.swift in Sources */,
+				D40686CF26C5181200CF18A5 /* extentions.swift in Sources */,
+				D40686D726C52A2300CF18A5 /* ColorStyling.swift in Sources */,
 				D44D522B26C2EF8B0006ACED /* RGBToHexApp.swift in Sources */,
+				D488E6D126C43F4A00FF011C /* ColorModel.swift in Sources */,
+				D40686D426C51FE500CF18A5 /* RgbToHexViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,7 +482,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = absaassignment.RGBToHex;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -452,7 +504,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = absaassignment.RGBToHex;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -11,7 +11,7 @@ import SwiftUI
 struct RGBToHexApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(vm: RgbToHexViewModel())
         }
     }
 }
