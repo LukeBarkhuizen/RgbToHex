@@ -7,11 +7,14 @@
 
 import Foundation
 import SwiftUI
+import Combine
 
 class WebService {
     @ObservedObject private(set) var vm: RgbToHexViewModel
-    init(vm: RgbToHexViewModel) {
+    var hexColor: PassthroughSubject<String, Never>
+    init(vm: RgbToHexViewModel, hexColor: PassthroughSubject<String, Never>) {
         self.vm = vm
+        self.hexColor = hexColor
     }
     func getColour(color: String){
         guard let url = URL(string: "http://thecolorapi.com/id?rgb=\(color)") else {
@@ -25,8 +28,7 @@ class WebService {
                 URLSession.shared.dataTask(with: request) { (data, response, error) in
                     guard let data = data else { return }
                     let resData = try! JSONDecoder().decode(ColorResponse.self, from: data)
-                    self.vm.hexColor = resData.value
-                    print(self.vm.hexColor)
+                    self.hexColor.send(resData.value)
                 }.resume()
     }
 }
