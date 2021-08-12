@@ -33,7 +33,7 @@ struct ContentView: View {
             })
         }.padding(.top, 20)
         
-        Text("Hex color for the chosen RGB").foregroundColor(selectedColor).font(.title).padding(.top, 8)
+        Text("Hex color for the chosen RGB").foregroundColor(selectedColor).font(.title3).padding(.top, 8)
         Text(vm.hexColorString).padding(.top, 8)
         
     }.padding(.vertical, 70)
